@@ -2,7 +2,7 @@
 
 echo "🔧 Alias 영구 등록 시작..."
 
-ALIAS_PATH="$HOME/dotfiles/scripts/alias.sh"
+ALIAS_PATH="$HOME/dotfile/scripts/alias.sh"
 ZSHRC="$HOME/.zshrc"
 
 # 이미 .zshrc에 등록되어 있는지 확인
