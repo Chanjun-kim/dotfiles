@@ -38,9 +38,9 @@ echo "env name = $env_name"
 echo "user = $user"
 
 pip install -U pip
-pip install -r ~/dotfile/requirements.txt
+pip install -r ~/dotfiles/requirements.txt
 pip install -U jupyter
 pip install ipykernel
 python -m ipykernel install --user --name $env_name --display-name "Python($env_name)"
-python ~/dotfile/scripts/edit_kernel.py --env $env_name --user $user
+python ~/dotfiles/scripts/edit_kernel.py --env $env_name --user $user
 echo "Creat Python Kernel $env_name"
