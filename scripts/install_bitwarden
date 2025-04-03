@@ -1,0 +1,24 @@
+brew install bitwarden-cli
+
+#!/bin/bash
+
+echo "🔐 Bitwarden CLI 환경 초기화 (macOS zsh 환경)"
+
+# 1. 사용자 입력
+read -p "📧 Bitwarden 이메일 주소: " EMAIL
+read -sp "🔑 Bitwarden 마스터 비밀번호: " PASSWORD
+echo
+
+# 2. 로그인
+echo "👉 Bitwarden 계정에 로그인 중..."
+bw login "$EMAIL" "$PASSWORD"
+
+# 3. Vault Unlock & 세션 키 저장
+SESSION_KEY=$(bw unlock "$PASSWORD" --raw)
+echo "✅ Session Key 저장됨"
+
+# 4. 환경변수 등록 (zshrc)
+echo "export BW_SESSION=$SESSION_KEY" >> ~/.zshrc
+source ~/.zshrc
+
+echo "🎉 초기화 완료! 앞으로 bw 명령어 바로 사용 가능"
