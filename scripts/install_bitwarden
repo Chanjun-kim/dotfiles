@@ -1,6 +1,6 @@
+#!/bin/zsh
+brew install jq
 brew install bitwarden-cli
-
-#!/bin/bash
 
 echo "🔐 Bitwarden CLI 환경 초기화 (macOS zsh 환경)"
 
@@ -22,3 +22,6 @@ echo "export BW_SESSION=$SESSION_KEY" >> ~/.zshrc
 source ~/.zshrc
 
 echo "🎉 초기화 완료! 앞으로 bw 명령어 바로 사용 가능"
+
+echo "다음을 실행하세요."
+echo "source ~/.zshrc"  # 또는 ~/.bashrc
