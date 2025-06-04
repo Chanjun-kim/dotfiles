@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 source ~/.zshrc   # zsh 사용 시
 if [ -z "$1" ]; then    
     echo "Error env_name is required"    
