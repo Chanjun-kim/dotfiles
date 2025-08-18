@@ -25,7 +25,7 @@ conda init
 # . activate base
 conda activate "$1"
 
-echo "$(which python)"
+echo "$(which python3)"
 # python_path=$(which python)
 # # python_path="/home/sagemaker-user/.conda/envs/test_env/bin/python"# 'envs' 이후의 값을 추출 (세 번째 필드 추출)
 # env_name=$(echo $python_path | sed -n 's|.*/envs/\([^/]*\)/.*|\1|p')
