@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 # Python / pip alias (Mac 환경)
-alias python=python3
-alias pip=pip3
+# alias python=python3
+# alias pip=pip3
 
 # Conda 관련 alias
 alias conda-create="bash ~/dotfiles/scripts/create_env.sh"
